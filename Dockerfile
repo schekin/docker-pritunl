@@ -5,7 +5,7 @@ RUN echo 'deb http://repo.pritunl.com/stable/apt jessie main' > /etc/apt/sources
     apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A && \
     apt-get --assume-yes update && \
     apt-get --assume-yes upgrade && \
-    apt-get --assume-yes install pritunl
+    apt-get --assume-yes install pritunl iptables
 
 EXPOSE 80 443 12345/udp
 
